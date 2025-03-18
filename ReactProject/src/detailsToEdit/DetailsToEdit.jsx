@@ -1,5 +1,3 @@
-import * as React from 'react';
-// import './DetailsToEdit.css'
 import '../detailsToShow/DetailsToShow.css'
 import BusinessDetailsStore from '../global/BusinessDetailsStore';
 import TextField from '@mui/material/TextField';
@@ -33,7 +31,7 @@ const DetailsToEdit = observer(() => {
   return (
     <>
 
-      <form sx={{ display: 'flex', alignItems: 'flex-end' }} onSubmit={handleSubmit}>
+      <form style={{ display: 'flex', alignItems: 'flex-end' }} onSubmit={handleSubmit}>
         <div className='logo'>
           <TextField defaultValue={logo} variant="standard" label="business logo" onChange={(e) => setLogo(e.target.value)} />
         </div>

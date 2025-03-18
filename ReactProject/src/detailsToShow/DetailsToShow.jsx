@@ -1,5 +1,4 @@
 import './DetailsToShow.css'
-import * as React from 'react';
 import Button from '@mui/material/Button';
 import GlobalState from '../global/globalState';
 import { observer } from 'mobx-react';

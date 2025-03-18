@@ -1,6 +1,11 @@
 import './Meeting.css'
 import Card from '@mui/material/Card';
 import MeetingsStore from '../global/MeetingsStore';
+import PropTypes from 'prop-types';
+
+Meeting.propTypes = {
+  i: PropTypes.number.isRequired, // כאן אתה מגדיר את סוג הפרופס 'i' כ-number
+};
 function Meeting({ i }) {
     const getMeetingColor = (dateTime) => {
         const today = new Date();

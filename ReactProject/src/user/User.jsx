@@ -85,7 +85,7 @@ const User = (observer(() => {
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DateTimePicker
                sx={{ m: 1, width: '25ch' }}
-                renderInput={(props) => (
+                renderInput={() => (
                   <TextField
                     variant="outlined"
                     className="inputs"
