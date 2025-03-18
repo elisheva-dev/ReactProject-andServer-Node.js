@@ -9,7 +9,7 @@ class ServicesStore {
     })
   }
   addService = async (service) => {
-    const response = await fetch("http://localhost:8787/service", {
+    const response = await fetch("https://businessmeet.onrender.com/service", {
       method: "POST",
       body: JSON.stringify(service),
       headers: {
@@ -27,7 +27,7 @@ class ServicesStore {
   }
   initServices = async () => {
     console.log("initial2 called")
-    const response = await fetch("http://localhost:8787/services",
+    const response = await fetch("https://businessmeet.onrender.com/services",
       {
         method: "GET",
       })

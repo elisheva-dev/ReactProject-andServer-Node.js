@@ -12,7 +12,7 @@ class MeetingsStore{
     })
   }
   addMeeting = async (meeting) => {
-    const response = await fetch("http://localhost:8787/appointment", {
+    const response = await fetch("https://businessmeet.onrender.com/appointment", {
       method: "POST",
       body: JSON.stringify(meeting),
       headers: {
@@ -40,7 +40,7 @@ class MeetingsStore{
   }
   initMeetings = async () => {
     console.log("initial2 called")
-    const response = await fetch("http://localhost:8787/appointments",
+    const response = await fetch("https://businessmeet.onrender.com/appointments",
       {
         method: "GET",
       })

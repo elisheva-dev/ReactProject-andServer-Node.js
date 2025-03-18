@@ -25,7 +25,7 @@ class BusinessDetailsStore{
     }
     setBusinessDetails = async (details) => {
         
-        const response = await fetch("http://localhost:8787/businessData", {
+        const response = await fetch("https://businessmeet.onrender.com/businessData", {
           method: "PUT",
           body: JSON.stringify(details),
           headers: {
@@ -47,7 +47,7 @@ class BusinessDetailsStore{
 
     initialBusinessDetails = async () => {
         console.log("initial called     ")
-        const response = await fetch("http://localhost:8787/businessData",
+        const response = await fetch("https://businessmeet.onrender.com/businessData",
         {
             method: "GET",
           })
