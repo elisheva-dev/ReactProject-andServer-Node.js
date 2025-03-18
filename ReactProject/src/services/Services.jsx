@@ -1,5 +1,4 @@
 import { observer } from 'mobx-react';
-import * as React from 'react';
 import AddIcon from '@mui/icons-material/Add';
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
