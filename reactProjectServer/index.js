@@ -6,8 +6,13 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-app.listen(8787, () => {
-    console.log("Server started!");
+// app.listen(8787, () => {
+//     console.log("Server started!");
+// });
+
+const PORT = process.env.PORT || 8787; // Render מקצה את הפורט אוטומטית
+app.listen(PORT, () => {
+    console.log(`Server started on port ${PORT}`);
 });
 
 app.get("/", (req, res) => {
